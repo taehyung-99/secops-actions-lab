@@ -1,3 +1,6 @@
 deploy/fake_deploy_key2.pem
 app/leaky_settings2.py
 app/leaky_settings copy.py
+0e251c9fab2ae9c525df781e0b82ad29650e37fd:app/leaky_settings copy.py:github-pat:10
+c78e499fc8b9f7943cd66b37b2fe5a89db26391b:app/leaky_settings copy.py:github-pat:10
+0e251c9fab2ae9c525df781e0b82ad29650e37fd:deploy/fake_deploy_key2.pem:private-key:3
