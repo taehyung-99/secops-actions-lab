@@ -7,4 +7,4 @@
 # 이 대입은 하드코딩 시크릿(Ruff S105)에도 걸립니다.
 # Ruff에도 시크릿 인접 규칙이 있다는 걸 보여 주려고,
 # 이 파일만 pyproject.toml에서 S105를 per-file-ignore로 끕니다.
-GITHUB_TOKEN = "ghp_FAKEfake0000GITHUBpat0000gitleaks002" # noqa: S105
+GITHUB_TOKEN = "ghp_FAKEfake0000GITHUBpat0000gitleaks002"  # noqa: S105
