@@ -1,3 +1,4 @@
+# 커버리지 스티키 코멘트 테스트!
 name: "03 - pytest (regression tests)"
 
 # 07-ci-summary.yml이 불러 쓰는 재사용 워크플로입니다. workflow_dispatch는
