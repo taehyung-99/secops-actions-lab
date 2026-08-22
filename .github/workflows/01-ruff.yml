@@ -60,4 +60,5 @@ jobs:
         run: uv run ruff format --check .
       - name: Run Ruff lint and security
         run: uv run ruff check app/
+        if: ${{ always() }}
 
