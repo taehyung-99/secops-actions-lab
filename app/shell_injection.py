@@ -7,8 +7,9 @@
 타입 주석이 없어 mypy는 조용합니다.
 """
 
+import shlex
 import subprocess
 
 
-def run_command(cmd):
-    subprocess.run(["sh", "-c"] + cmd)  # noqa: S603
+def run_command(cmd: str) -> None:
+    subprocess.run(shlex.split(cmd), check=True)  # noqa: S603

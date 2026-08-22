@@ -20,7 +20,7 @@ app = flask.Flask(__name__)
 
 def search(cur):
     q = request.args.get("q", "")
-    cur.execute(  # nosemgrep: lab-taint-sql-concat
+    cur.execute(  # nosemgrepL lab-taint-sql-concat
         "SELECT * FROm users WHERE name LIKE %s",
         (f"%{q}%",),
     )
