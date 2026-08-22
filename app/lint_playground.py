@@ -19,7 +19,9 @@ def clamp_values(numbers: list[int]) -> list[int]:
 
 def find_missing(value, items=None):
     # 가변 기본값 (B006) / None 비교 (E711)
-    if value is not items:
+    if items is None:
+        items = []
+    if value is None:
         return items
     items.append(value)
     return items

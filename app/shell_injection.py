@@ -6,9 +6,9 @@
  Ruff 0.9.10에서는 preview라 기본 실행에서는 안 뜹니다.)
 타입 주석이 없어 mypy는 조용합니다.
 """
-
+import shlex
 import subprocess
 
 
-def run_command(cmd):
-    subprocess.run(["sh", "-c"] + cmd)  # noqa: S603
+def run_command(cmd: str) -> None:
+    subprocess.run(shlex.split(cmd), check=True)  # noqa: S603
