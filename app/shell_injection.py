@@ -11,4 +11,4 @@ import subprocess
 
 
 def run_command(cmd):
-    subprocess.run("sh -c " + cmd, shell=True)
+    subprocess.run(["sh", "-c"] + cmd)  # noqa: S603
