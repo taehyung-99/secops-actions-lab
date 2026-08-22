@@ -56,8 +56,8 @@ on:
 #       https://docs.github.com/actions/reference/evaluate-expressions-in-workflows-and-actions
 # ─────────────────────────────────────────────────────────
 concurrency:
-  group: ${{ github.workflow }}-${{ github.run_id }}   # TODO
-  cancel-in-progress: false                            # TODO
+  group: ${{ github.workflow }}-${{ github.ref }}   # TODO
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}                            # TODO
 
 # 여기서는 아무 권한도 주지 않고, 필요한 잡에만 아래에서 따로 얹습니다.
 # 재사용 워크플로에 건네지는 토큰의 권한은 '부르는 쪽 잡'의 permissions가 정하고,
