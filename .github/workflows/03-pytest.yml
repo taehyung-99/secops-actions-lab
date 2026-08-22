@@ -1,9 +1,11 @@
+# 커버리지 스티키 코멘트 테스트!
 name: "03 - pytest (regression tests)"
 
 # 07-ci-summary.yml이 불러 쓰는 재사용 워크플로입니다. workflow_dispatch는
 # 이 도구 하나만 따로 돌려 보고 싶을 때를 위해 남겨 둡니다.
 # 문서: https://docs.github.com/actions/sharing-automations/reusing-workflows
 on:
+  pull_request:
   workflow_call:
   workflow_dispatch:
 permissions:

@@ -30,7 +30,7 @@ jobs:
       # ─────────────────────────────────────────────────────
       - name: Run Semgrep (TODO)
         run: |
-          semgrep scan \
+          semgrep \
           --config p/python \
           --config .semgrep/rules.yml \
           --sarif --output semgrep.sarif \
