@@ -6,6 +6,7 @@
  Ruff 0.9.10에서는 preview라 기본 실행에서는 안 뜹니다.)
 타입 주석이 없어 mypy는 조용합니다.
 """
+
 import shlex
 import subprocess
 
